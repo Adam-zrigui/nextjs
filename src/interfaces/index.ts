@@ -32,6 +32,7 @@ export interface IParams  {
     params: {
         postId: string;
         productId: string;
+        category: string;
       };
 }
 export interface IProduct {
@@ -39,4 +40,23 @@ export interface IProduct {
     description: string;
     title: string;
     price: number;
+}
+export interface INews {
+    id: number;
+    title: string;
+    description: string;
+    category:string
+}
+export interface IData {
+    posts: number;
+    likes: number;
+    followers: number;
+    following:number
+}
+export interface IEvent {
+    id: number;
+title: string
+description: string;
+date: string;
+category: string;
 }
